@@ -135,14 +135,15 @@ function submitFn()
         {
             Score++;
         }
-        for (var i=0;i<4;i++){
-        ans[i].checked = false;}
+       
         questionNumber++;
     }
     else
     { 
         location.href = "2nd.html";
     }
+     for (var i=0;i<4;i++){
+        ans[i].checked = false;}
    
     begQuiz();
 }
