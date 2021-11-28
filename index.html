@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div id="quesAns">
+            <div id = "question-text">Question</div>
+            <div class="answer">
+                <input type = "radio" id ="ans1" name = "answer" value="ans1" />
+                <label for="ans1"  id = "option1">ans1</label><br>
+                <input type = "radio" id ="ans2" name = "answer"/>
+                <label for="ans2" id= "option2">ans2</label><br>
+                <input type = "radio" id ="ans3" name = "answer"/>
+                <label for="ans3" id ="option3">ans3</label><br>
+                <input type = "radio" id ="ans4" name = "answer"/>
+                <label for="ans4" id ="option4">ans4</label><br>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="submit" onclick="submitFn()">Submit</button>
+        </div>
+        <div style="display: none;" id="score">
+            <span id="scoreHeading">This is Your Score: :)<br></span>
+            <span id="gottenScore">00</span>
+            <span>/</span>
+            <span id="totalScore">10</span>
+
+        </div>
+        <button style="display:none;" id="reset" onclick="playAgain()">Try Again</button>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
