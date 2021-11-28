@@ -131,41 +131,16 @@ function submitFn()
                 break;
             } 
         }
-        
-       if(value)
-       {
-           Score++;
-       }
-       //alert(Score);
-       questionNumber++;
-    
+        if(value)
+        {
+            Score++;
+        }
+        questionNumber++;
     }
     else
-    {
-        if (targetDiv.style.display !== "none") {
-            targetDiv.style.display = "none";
-            subButton.style.display = "none";
-            gottenScore.innerHTML = Score;
-
-            
-        } 
-        scoreDiv.style.display ="block";
-        tryAgain.style.display ="block";
-      }
-      for (var i=0;i<4;i++){
-        ans[i].checked = false;
-
-      }
+    { 
+        location.href = "2nd.html";
+    }
    
     begQuiz();
 }
-function playAgain(){
-    targetDiv.style.display = "block";
-    subButton.style.display = "block";
-    scoreDiv.style.display ="none";
-    tryAgain.style.display ="none";
-    questionNumber=0;
-    begQuiz();
-}
-
-
