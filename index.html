@@ -9,23 +9,50 @@
 </head>
 <body>
     
-    <div class="container">
-        <div id="quesAns">
-            <div id = "question-text">Question</div>
-            <div class="answer">
-                <input type = "radio" id ="ans1" name = "answer" value="ans1" />
-                <label for="ans1"  id = "option1">ans1</label><br>
-                <input type = "radio" id ="ans2" name = "answer"/>
-                <label for="ans2" id= "option2">ans2</label><br>
-                <input type = "radio" id ="ans3" name = "answer"/>
-                <label for="ans3" id ="option3">ans3</label><br>
-                <input type = "radio" id ="ans4" name = "answer"/>
-                <label for="ans4" id ="option4">ans4</label><br>
-            </div>
+     <div className='fullDiv'>
+        <div className='main'>
+      
+      <div className='div1'>
+        <img src={logo} alt="logo"/>
+        <p id='firstText'>Certficate Successfully Verified</p>
+        <p id='secondText'>Certficate for COVID-19 Vaccination</p>
+      </div>
+      <div className='div2'>
+        <div className='inner1'> 
+          <p>Name</p>
+          <p>Age</p>
+          <p>Gender</p>
+          <p>Certificate ID</p>
+          <p>Beneficery ID</p>
+          <p>Vaccine Name</p>
+          <p>Date of 1st Dose</p>
+          <p>Vaccination at</p>
+          <p>Country of Vaccination</p>
+          <p>Country Of Vaccination</p>
+        
         </div>
-        <div class="controls">
-            <button class="btn" id="submit" onclick="submitFn()">Submit</button>
-       
-    <script src = "index.js"></script>
+        <div className='inner2'> 
+          <p>Jiyar Mandal</p>
+          <p>71</p>
+          <p>Male</p>
+          <p>38194984094</p>
+          <p>33478367591470</p>
+          <p>COVISHIELD</p>
+          <p>29-Oct-2021</p>
+          <p>Partially Vaccinated</p>
+          <p>Monigram SSK GPHQ</p>
+          <>IN</>
+        </div>
+          
+      
+      </div>
+      <div className='div3'>
+        <button>Verify Another Certificate</button>
+      </div>
+
+    </div>
+    
+    
+    </div>
 </body>
 </html>
